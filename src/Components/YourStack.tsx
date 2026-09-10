@@ -1,5 +1,5 @@
 
-const SelectedCards = () => {
+const YourStack = () => {
     return (
         <div>
             MY TECH STACK
@@ -7,4 +7,4 @@ const SelectedCards = () => {
     );
 };
 
-export default SelectedCards;
+export default YourStack;

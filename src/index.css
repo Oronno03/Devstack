@@ -3,6 +3,8 @@
 
 @theme {
   --font-main: "Jakarta Sans", serif;
+  --background-image-gradient-main: linear-gradient(to right, #F97316, #D81B7E, #7C3AED);
+  --background-image-gradient-button: linear-gradient(to right, #F97316, #EC4899);
 }
 
 /* * {

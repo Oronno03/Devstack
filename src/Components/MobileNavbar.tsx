@@ -25,7 +25,7 @@ const MobileNavbar = () => {
             Sign In
           </button>
 
-          <button className="bg-[#D91B7E] text-white px-5 py-2.5 rounded-full font-main font-semibold text-[14px] cursor-pointer">
+          <button className="bg-gradient-button text-white px-5 py-2.5 rounded-full font-main font-semibold text-[14px] cursor-pointer">
             Sign Up
           </button>
         </div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TechCardProps } from "../Interfaces/Props";
+import { toast } from "react-toastify";
 
 const TechCard = ({
   technology,
@@ -9,8 +10,24 @@ const TechCard = ({
   const [isSelected, setIsSelected] = useState(false);
 
   const handleAdd = () => {
-    if (selectedTechnologies.some((tech) => tech.id == technology.id)) return;
+    if (selectedTechnologies.some((tech) => tech.id == technology.id)) {
+      toast(`${technology.name} is already added to your stack!`, {
+        position: "bottom-right",
+        autoClose: 2000,
+        pauseOnHover: true,
+        theme: "colored",
+        type: "error",
+    });
+    return;
+    };
     setSelectedTechnologies([...selectedTechnologies, technology]);
+    toast(`${technology.name} has been added to your stack!`, {
+      position: "bottom-right",
+      autoClose: 2000,
+      pauseOnHover: true,
+      theme: "colored",
+      type: "success",
+    });
   };
 
   useEffect(() => {
@@ -45,7 +62,7 @@ const TechCard = ({
       </div>
       <button
         className={`font-main  text-white py-2.5 rounded-lg text-[11px] ${isSelected ? "bg-gray-500 cursor-not-allowed" : "cursor-pointer bg-[#0A0F1D]"}`}
-        disabled={isSelected}
+        // disabled={isSelected}
         onClick={handleAdd}
       >
         {isSelected ? "Already added to stack" : "Add to Stack"}

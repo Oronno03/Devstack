@@ -9,7 +9,7 @@ const Hero = () => {
             <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px]">
               Build Your Ideal
             </h1>
-            <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px] bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+            <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px] bg-gra bg-clip-text text-transparent">
               Development Stack
             </h1>
           </div>
@@ -20,7 +20,7 @@ const Hero = () => {
             project.
           </p>
           <div className="flex gap-3">
-            <button className="w-42.5 rounded-xl px-4 py-3 bg-linear-to-r from-[#F97316] to-[#EC4899] text-[14px] text-white cursor-pointer">Explore Technologies</button>
+            <button className="w-42.5 rounded-xl px-4 py-3 bg-gradient-button text-[14px] text-white cursor-pointer">Explore Technologies</button>
             <button className="w-42.5 rounded-xl px-4 py-3 border border-[#E5E7EB] border-solid text-[14px] text-[#374151] cursor-pointer">Learn More</button>
           </div>
         </div>

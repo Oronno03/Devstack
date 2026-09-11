@@ -11,7 +11,7 @@ const Navbar = () => {
     })
   }, [])
 
-  return <>{!isMobile ? <WideNavbar /> : <MobileNavbar />}</>;
+  return <div className="mb-24">{!isMobile ? <WideNavbar /> : <MobileNavbar />}</div>;
 };
 
 export default Navbar;

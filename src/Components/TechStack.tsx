@@ -7,9 +7,10 @@ const fetchTechnologies = async (): Promise<ITechnology[]> => {
   const res = await fetch("./technologies.json");
   return res.json();
 };
+const technologiesPromise = fetchTechnologies();
+
 
 const TechStack = () => {
-  const technologiesPromise = fetchTechnologies();
   const [selectedTechnologies, setSelectedTechnologies] = useState<ITechnology[]>(
     [],
   );

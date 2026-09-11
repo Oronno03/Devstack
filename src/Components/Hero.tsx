@@ -3,12 +3,10 @@ const Hero = () => {
     <div className="mx-auto container">
       <div className="flex justify-between">
         <div>
-          <h1>TITLE TEXT</h1>
-          <p>PARAGRAPH TEXT</p>
+          <h1>Build Your Ideal</h1>
+          <h1>Development Stack</h1>
         </div>
-        <div>
-          <img src="a" alt="HERO SECTION IMAGE" />
-        </div>
+        <img src="a" alt="HERO SECTION IMAGE" />
       </div>
     </div>
   );

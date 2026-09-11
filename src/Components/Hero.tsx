@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="mx-auto container">
       <div className="flex flex-col lg:grid lg:grid-cols-2 items-center justify-center">
-        <div className="flex flex-col gap-6 lg:pr-40 justify-center items-center">
+        <div className="flex flex-col gap-6 lg:pr-40 justify-center items-center lg:items-start">
           <div className="leading-[0.95]">
             <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px]">
               Build Your Ideal

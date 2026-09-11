@@ -8,10 +8,18 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("resize", () => {
       setIsMobile(innerWidth < 1000);
-    })
-  }, [])
+    });
+  }, []);
 
-  return <div className="mb-24">{!isMobile ? <WideNavbar /> : <MobileNavbar />}</div>;
+  return (
+    <>
+    <div className="mb-6">
+      {!isMobile ? <WideNavbar /> : <MobileNavbar />}
+
+    </div>
+    <div className="h-1 w-full bg-[#F1F5F9] mb-24"></div>
+    </>
+  );
 };
 
 export default Navbar;

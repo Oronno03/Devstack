@@ -15,8 +15,10 @@ const TechStack = () => {
   );
 
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-[3fr_1fr] gap-8">
+    <div className="container mx-auto mt-28">
+      <h1 className="font-main text-[36px] text-[#0F172A] font-extrabold">Explore the <span className="bg-clip-text text-transparent bg-linear-to-r from-[#EC4899] to-[#EC4899]">Technologies</span></h1>
+      <p className="font-main text-[16px] text-[#64748B]">Pick one technology per category to build your ideal stack.</p>
+      <div className="flex flex-col md:grid grid-cols-[3fr_1fr] gap-8 mt-10">
         <Suspense fallback={<div>Loading Tech Stack...</div>}>
           <AllCards
             technologiesPromise={technologiesPromise}

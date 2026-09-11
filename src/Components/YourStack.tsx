@@ -17,7 +17,7 @@ const YourStack = ({
       </div>
       <div className="flex flex-col gap-1 mb-12">
         {selectedTechnologies.map((tech) => (
-          <SelectedCard technology={tech} selectedTechnologies={selectedTechnologies} setSelectedTechnologies={setSelectedTechnologies} />
+          <SelectedCard key={tech.id} technology={tech} selectedTechnologies={selectedTechnologies} setSelectedTechnologies={setSelectedTechnologies} />
         ))}
       </div>
       <div>

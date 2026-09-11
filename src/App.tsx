@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import TechStack from "./Components/TechStack";
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <TechStack />
+      <Footer />
     </>
   );
 };

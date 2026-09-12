@@ -134,7 +134,7 @@
     "name": "C++",
     "category": "Language",
     "description": "A high-performance programming language commonly used for systems, games, and performance-critical software.",
-    "icon": "https://icon.icepanel.io/Technology/svg/C%2B%2B.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/cplusplus/default.svg",
     "rating": 4.7,
     "difficulty": "Advanced",
     "badge": "Powerful"

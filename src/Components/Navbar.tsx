@@ -15,7 +15,6 @@ const Navbar = () => {
     <>
     <div className="mb-6">
       {!isMobile ? <WideNavbar /> : <MobileNavbar />}
-
     </div>
     <div className="h-0.5 w-full bg-[#F1F5F9] mb-24"></div>
     </>

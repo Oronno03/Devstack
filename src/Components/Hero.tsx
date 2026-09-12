@@ -9,7 +9,7 @@ const Hero = () => {
             <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px]">
               Build Your Ideal
             </h1>
-            <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px] bg-gra bg-clip-text text-transparent">
+            <h1 className="font-main font-extrabold text-[60px] tracking-[-1.5px] bg-gradient-main bg-clip-text text-transparent">
               Development Stack
             </h1>
           </div>

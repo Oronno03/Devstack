@@ -2,14 +2,14 @@ import logo from "../assets/logo-text.png";
 
 const WideNavbar = () => {
   return (
-    <nav className="container flex justify-between mx-auto mt-4 items-center gap-4">
+    <nav className="container flex justify-between mx-auto pt-4 items-center gap-4">
       <img src={logo} alt="" />
       <ul className="flex gap-7.25">
         <li className="text-[#DB2777] font-semibold font-main text-[14px] cursor-pointer">
           Home
         </li>
         {["Technologies", "Projects", "About", "Contact"].map((item) => (
-          <li key={item} className="font-semibold font-main text-[14px] text-[#475569] cursor-pointer">
+          <li key={item} className="font-semibold font-main text-[14px] text-[#475569] cursor-pointer hover:text-[#DB2777]">
             {item}
           </li>
         ))}

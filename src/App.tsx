@@ -9,13 +9,15 @@ import TechStack from "./Components/TechStack";
 const App = () => {
 
   return (
-    <>
-      <Navbar />
+    <div className="relative">
+      <div className="sticky top-0 bg-white z-10 backdrop-blur-3xl">
+        <Navbar />
+      </div>
       <Hero />
       <TechStack />
       <Footer />
       <ToastContainer />
-    </>
+    </div >
   );
 };
 

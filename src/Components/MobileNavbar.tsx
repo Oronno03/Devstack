@@ -5,7 +5,7 @@ const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="container mx-auto mt-4 font-main">
+    <nav className="container mx-auto pt-4 font-main">
       {/* Top Navbar */}
       <div className="flex justify-between items-center gap-4">
         {/* Hamburger */}

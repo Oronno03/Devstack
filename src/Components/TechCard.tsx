@@ -9,6 +9,24 @@ const TechCard = ({
 }: TechCardProps) => {
   const [isSelected, setIsSelected] = useState(false);
 
+  const badgeColor = {
+    "Popular": "#F0F9FF",
+    "Trending": "#ECFDF5",
+    "Essential": "#FFF7ED",
+    "Enterprise": "#FFFBEB",
+    "Powerful": "#F3E8FF",
+    "Top SQL": "#DBEAFE",
+  }[`${technology.badge}`];
+
+  const badgeTextColor = {
+    "Popular": "#0EA5E9",
+    "Trending": "#059669",
+    "Essential": "#EA580C",
+    "Top SQL": "#2563EB",
+    "Enterprise": "#D97706",
+    "Powerful": "#7E22CE",
+  }[technology.badge]
+
   const handleAdd = () => {
     if (selectedTechnologies.some((tech) => tech.id == technology.id)) {
       toast(`${technology.name} is already added to your stack!`, {
@@ -42,7 +60,7 @@ const TechCard = ({
     >
       <div className="flex justify-between">
         <img src={technology.icon} alt="" className="w-8 h-8" />
-        <p className="bg-[#F0F9FF] text-[#0EA5E9] py-0.5 px-2.5 rounded-full">
+        <p className={`py-0.5 px-3 font-semibold rounded-full`} style={{backgroundColor: badgeColor, color: badgeTextColor}}>
           {technology.badge}
         </p>
       </div>

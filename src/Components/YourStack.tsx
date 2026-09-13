@@ -34,23 +34,25 @@ const YourStack = ({
           </div>
         )}
       </div>
-      <div>
-        <button
-          onClick={() => {
-            toast(`Your stack has been cleared!`, {
-              position: "bottom-right",
-              autoClose: 2000,
-              pauseOnHover: true,
-              theme: "colored",
-              type: "success",
-            });
-            setSelectedTechnologies([]);
-          }}
-          className="cursor-pointer hover:text-white hover:bg-[#D82C20] ease-in transition-all text-[#D82C20] border border-solid border-[#D82C20] w-full rounded-lg font-semibold text-[14px] py-1.75"
-        >
-          Remove All
-        </button>
-      </div>
+      {selectedTechnologies.length > 0 && (
+        <div>
+          <button
+            onClick={() => {
+              toast(`Your stack has been cleared!`, {
+                position: "bottom-right",
+                autoClose: 2000,
+                pauseOnHover: true,
+                theme: "colored",
+                type: "success",
+              });
+              setSelectedTechnologies([]);
+            }}
+            className="cursor-pointer hover:text-white hover:bg-[#D82C20] ease-in transition-all text-[#D82C20] border border-solid border-[#D82C20] w-full rounded-lg font-semibold text-[14px] py-1.75"
+          >
+            Remove All
+          </button>
+        </div>
+      )}
     </div>
   );
 };
